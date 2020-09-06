@@ -1,0 +1,31 @@
+.work-item .work-name {
+    padding: 20px 24px;
+    flex-grow: 1;
+    background-color: $white-color;
+
+}
+
+.work-title {
+    @extend %list;
+
+    margin: 0px 0px;
+    font-family: $roboto-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.work-desk {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-text-color;
+}
+
+.work {
+    text-decoration: none;
+}

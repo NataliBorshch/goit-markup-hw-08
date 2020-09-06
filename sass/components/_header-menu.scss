@@ -1,0 +1,68 @@
+.menu-button {
+    display: inline-flex;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    color: currentColor;
+
+    &:active ,
+    &:focus ,
+    &:hover{
+        color: $accent-color;
+    }
+
+    @include for-size(tablet-landscape){
+        display: none;
+    }
+    
+}
+
+.menu-button .icon-cross {
+    display: none;
+    fill: currentColor;
+}
+.menu-button .icon-menu {
+    fill: currentColor;
+}
+
+.menu-button.is-open .icon-cross{
+    display: block;
+    fill: currentColor;
+   
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container{
+    background-color: $white-color;
+    width: 100%;
+   
+
+    @include for-size(tablet-landscape-1){
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    
+    text-align: center;
+    font-size: 18px;
+    padding: 60px;
+
+
+
+    
+    &.is-open{
+        display: block;
+        }
+
+    
+      }
+
+    @include for-size(tablet-landscape){
+    display: flex;
+    }
+  
+}

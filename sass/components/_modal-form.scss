@@ -1,0 +1,139 @@
+.modal-title {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.modal-hero .form-fill {
+    @extend %list;
+}
+
+.form-fill .form-input {
+    width: 100%;
+
+    padding: 12px 42px;
+    color: $title-text-color;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &input:active,
+    &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+        outline: none;
+    }
+}
+
+.form-area:active,
+.form-area:focus,
+.form-area:hover {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    outline: none;
+}
+
+.form-fill .form-label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-family: $roboto-font;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $title-text-color;
+
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    fill: currentColor;
+    color: currentColor;
+    bottom: 14px;
+    left: 15px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-input:focus+&,
+    .form-input:active+&,
+    .form-input:hover+& {
+        color: $accent-color;
+    }
+}
+
+textarea {
+    resize: none;
+    padding: 12px 16px;
+
+    height: 120px;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+textarea::placeholder {
+    font-family: $roboto-font;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.dogovir .icon {
+
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+
+    border: 2px solid $black-color;
+    border-radius: 4px;
+}
+
+.checkbox:checked+.icon {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url("../img1/iconcheck.svg");
+    background-size: contain;
+
+    background-origin: border-box;
+}
+
+.dogovir {
+    display: flex;
+    justify-content: center;
+}
+
+.dogovir .item-dogovir {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 20px;
+    font-family: $roboto-font;
+    font-size: 14px;
+    line-height: 24px;
+    color: $title-text-color;
+}
+
+.dogovir .link-dogovir {
+    color: $accent-color;
+}

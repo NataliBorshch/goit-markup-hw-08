@@ -1,0 +1,59 @@
+.box1 {
+    @include for-size (tablet-landscape) {
+        margin-right: 165px;
+        margin-left: 61px;
+    }
+
+    @include for-size (desktop) {
+        margin-right: 70px;
+        margin-left: 0px;
+        width: 231px;
+    }
+}
+
+.contacts {
+    @extend %list;
+    margin-top: 20px;
+}
+
+
+
+footer .contacts-address {
+    font-family: $roboto-font;
+    font-style: normal;
+    font-weight: normal;
+    color: $white-color;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    transition: color 250 ms cubic - bezier(0.4, 0, 0.2, 1);
+
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-color;
+    }
+}
+
+
+footer .contacts-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250 ms cubic - bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $accent-color;
+    }
+
+}

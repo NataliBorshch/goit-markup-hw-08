@@ -1,0 +1,20 @@
+body {
+    margin: 0px 0px;
+    
+    font-family: $roboto-font, $sans-serif-font;
+    letter-spacing: 0.03em;
+    color: $black-color;
+    background: $white-color;
+
+
+    @include for-size(tablet-landscape){
+        padding-top: 80px;
+    }
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

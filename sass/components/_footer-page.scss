@@ -1,0 +1,31 @@
+footer {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background: $footer-color;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $white-color;
+    text-align: center;
+
+    @include for-size (desktop) {
+        text-align: start;
+    }
+}
+
+.footer-box {
+
+    @include for-size (tablet-landscape) {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    @include for-size (desktop) {
+        display: flex;
+        align-items: baseline;
+
+    }
+}

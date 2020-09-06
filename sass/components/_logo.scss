@@ -1,0 +1,15 @@
+.logo {
+
+    font-family: $raleway-font;
+    font-weight: bold;
+    line-height: 1.19;
+    font-size: 24px;
+
+    @include for-size(desktop) {
+        font-size: 26px;
+    }
+}
+
+.logo>span {
+    color: $accent-color;
+}

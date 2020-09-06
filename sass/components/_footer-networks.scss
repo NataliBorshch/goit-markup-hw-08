@@ -1,0 +1,49 @@
+.box2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+
+    @include for-size (tablet-landscape) {
+        margin: 0px;
+    }
+
+    @include for-size (desktop) {
+        margin-right: 93px;
+    }
+}
+
+
+.sign-networks {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sign-networks .item+.item {
+    margin-left: 10px;
+}
+
+.sign-networks .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $accent-color;
+    }
+}
+
+.sign-networks .icon {
+    fill: $white-color;
+
+}

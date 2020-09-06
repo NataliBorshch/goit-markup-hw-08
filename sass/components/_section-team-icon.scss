@@ -1,0 +1,38 @@
+.networks {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.networks .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $icon-color;
+    background-color: $white-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        bacrground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white-color;
+        background-color: $accent-color;
+
+    }
+}
+
+.networks .item+.item {
+    margin-left: 10px;
+}
+
+.networks .icon {
+    fill: currentColor;
+}

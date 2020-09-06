@@ -1,0 +1,11 @@
+.work-list {
+    @extend %list;
+    background: $white-color;
+    margin: -15px;
+
+    @include for-size(tablet-landscape) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

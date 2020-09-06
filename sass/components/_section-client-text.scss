@@ -1,0 +1,9 @@
+.our-client h3 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+
+    @include for-size(desktop) {
+        margin-bottom: 50px;
+    }
+}

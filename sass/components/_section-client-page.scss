@@ -1,0 +1,18 @@
+.our-client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    @include for-size (desktop) {
+        padding-top: 85px;
+        padding-bottom: 103px;
+    }
+
+}
+
+.client {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
