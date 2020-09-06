@@ -1,37 +1,37 @@
 .hero {
-    max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img1/hero.jpg);
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img1/hero.jpg);
 
-    background-color: $hero-back-color;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    /*background-size: cover;*/
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  background-color: $hero-back-color;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  /*background-size: cover;*/
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
 
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .hero {
-    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/hero-2x.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/hero-2x.jpg');
   }
 }
 
 @media screen and (min-device-pixel-ratio: 3),
-  screen and (-webkit-min-device-pixel-ratio: 3),
-  screen and (-o-min-device-pixel-ratio: 3/1),
-  screen and (min-resolution: 3dppx),
-  screen and (min-resolution: 288dpi) {
+screen and (-webkit-min-device-pixel-ratio: 3),
+screen and (-o-min-device-pixel-ratio: 3/1),
+screen and (min-resolution: 3dppx),
+screen and (min-resolution: 288dpi) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img1/hero-2x.jpg");
   }
@@ -39,17 +39,17 @@
 
 
 .hero-title {
-    margin: 0px;
+  margin: 0px;
 
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.36;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
 
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-color;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
 
-    @include for-size(desktop) {
-        font-size: 44px;
-    }
+  @include for-size(desktop) {
+    font-size: 44px;
+  }
 }
