@@ -97,6 +97,8 @@ textarea::placeholder {
     -moz-appearance: none;
     appearance: none;
     position: absolute;
+
+
 }
 
 .dogovir .icon {
@@ -107,6 +109,8 @@ textarea::placeholder {
 
     border: 2px solid $black-color;
     border-radius: 4px;
+    flex-shrink: 0;
+    display: inline-flex;
 }
 
 .checkbox:checked+.icon {
@@ -121,17 +125,23 @@ textarea::placeholder {
 .dogovir {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .dogovir .item-dogovir {
-    display: inline-flex;
+    display: inline;
     align-items: center;
+    text-align: center;
 
-    margin-top: 20px;
     font-family: $roboto-font;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     color: $title-text-color;
+
+    @include for-size(tablet-landscape) {
+        font-size: 14px;
+
+    }
 }
 
 .dogovir .link-dogovir {
