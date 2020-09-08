@@ -112,8 +112,9 @@ img {
 
 @media (min-width: 768px) {
   .page-header {
-    position: absolute;
+    position: fixed;
     height: 80px;
+    background-color: #FFFFFF;
   }
 }
 
