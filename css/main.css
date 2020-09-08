@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("..fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2");
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
