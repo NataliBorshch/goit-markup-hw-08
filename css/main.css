@@ -1588,10 +1588,17 @@ footer > address {
 
 .work .work-excerpt {
   margin: 0;
-  padding: 63px 24px;
-  font-size: 18px;
+  padding: 24px 24px;
+  font-size: 14px;
   line-height: 1.56;
   color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .work .work-excerpt {
+    padding: 63px 24px;
+    font-size: 18px;
+  }
 }
 
 .work-item .work-name {

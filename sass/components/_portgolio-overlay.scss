@@ -21,8 +21,17 @@
 
 .work .work-excerpt {
     margin: 0;
-    padding: 63px 24px;
-    font-size: 18px;
+    padding: 24px 24px;
+    font-size: 14px;
+
     line-height: 1.56;
     color: $white-color;
+
+    @include for-size(tablet-landscape) {
+        padding: 63px 24px;
+        font-size: 18px;
+
+    }
+
+
 }
