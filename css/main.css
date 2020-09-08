@@ -320,6 +320,12 @@ header .contacts-link {
   }
 }
 
+@media (min-width: 1200px) {
+  header .contacts-link {
+    font-size: 14px;
+  }
+}
+
 header .contacts-link:hover, header .contacts-link:focus, header .contacts-link:active {
   color: #2196F3;
 }
@@ -406,7 +412,6 @@ header .contacts-link:hover, header .contacts-link:focus, header .contacts-link:
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img1/mobile/Heromob@1x.jpg");
   background-color: #C4C4C4;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   text-align: center;
   padding-top: 200px;
