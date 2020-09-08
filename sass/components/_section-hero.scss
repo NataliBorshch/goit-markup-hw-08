@@ -1,39 +1,98 @@
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
+  max-width: 767px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img1/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../img1/mobile/Heromob@1x.jpg');
 
   background-color: $hero-back-color;
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  /*background-size: cover;*/
+
+  background-size: cover;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 
-
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-screen and (-webkit-min-device-pixel-ratio: 2),
-screen and (-o-min-device-pixel-ratio: 2/1),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/hero-2x.jpg');
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/mobile/Heromob@2x.jpg');
   }
-}
 
-@media screen and (min-device-pixel-ratio: 3),
-screen and (-webkit-min-device-pixel-ratio: 3),
-screen and (-o-min-device-pixel-ratio: 3/1),
-screen and (min-resolution: 3dppx),
-screen and (min-resolution: 288dpi) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img1/hero-2x.jpg");
+  @media screen and (min-device-pixel-ratio: 3),
+  screen and (-webkit-min-device-pixel-ratio: 3),
+  screen and (-o-min-device-pixel-ratio: 3/1),
+  screen and (min-resolution: 3dppx),
+  screen and (min-resolution: 288dpi) {
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/mobile/Heromob@3x.jpg');
+  }
+
+  @include for-size(tablet-portrait) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img1/tablet/Herotablet@1x.jpg');
+    max-width: 1199px;
+    height: 100%;
+
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/tablet/Herotablet@2x.jpg');
+
+
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-min-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 3dppx),
+    screen and (min-resolution: 288dpi) {
+
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/tablet/Herotablet@3x.jpg');
+    }
+  }
+
+
+
+
+  @include for-size(desktop) {
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img1/hero.jpg');
+
+
+
+
+
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img1/hero-2x.jpg');
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-min-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 3dppx),
+    screen and (min-resolution: 288dpi) {
+
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img1/hero-2x.jpg");
+    }
+
+
   }
 }
 
